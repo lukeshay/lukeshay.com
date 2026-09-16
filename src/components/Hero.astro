@@ -1,15 +1,15 @@
 ---
 export interface Props {
-	title: string
-	subtitle?: string
-	description?: string
-	class?: string
+	title: string;
+	subtitle?: string;
+	description?: string;
+	class?: string;
 }
 
-const { title, subtitle, description } = Astro.props
+const { title, subtitle, description } = Astro.props;
 
-const hasSubtitle = Astro.slots.has("subtitle") || subtitle
-const hasDescription = Astro.slots.has("description") || description
+const hasSubtitle = Astro.slots.has("subtitle") || subtitle;
+const hasDescription = Astro.slots.has("description") || description;
 ---
 
 <section title={title} class={Astro.props.class}>

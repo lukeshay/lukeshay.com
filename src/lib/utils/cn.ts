@@ -1,5 +1,5 @@
-import { twMerge, type ClassNameValue } from "tailwind-merge"
+import { twMerge, type ClassNameValue } from "tailwind-merge";
 
-const cn = (...classLists: ClassNameValue[]) => twMerge(...classLists)
+const cn = (...classLists: ClassNameValue[]) => twMerge(...classLists);
 
-export { cn, cn as clsx }
+export { cn, cn as clsx };

@@ -2,9 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import List from "@components/List.astro";
 import ListItem from "@components/ListItem.astro";
-import Home from "@components/icons/Home.astro";
 import AcademicCap from "@components/icons/AcademicCap.astro";
-import Cake from "@components/icons/Cake.astro";
 import Section from "@components/Section.astro";
 import SectionHeader from "@components/SectionHeader.astro";
 import Information from "@components/Information.astro";
@@ -48,20 +46,6 @@ const projects = await getPinnedRepositories();
 					alt="Amazon Web Services"
 				/>
 				<ListItem
-					title="Bought our first house"
-					subtitle="My wife and I bought our first house"
-					date="Aug 2022"
-				>
-					<Home />
-				</ListItem>
-				<ListItem
-					title="Got married"
-					subtitle="My fianceé and I got married in downtown Des Moines"
-					date="Aug 2022"
-				>
-					<Cake />
-				</ListItem>
-				<ListItem
 					title="Started a new job at Hy-Vee"
 					subtitle="Software Engineer II doing fullstack development on Aisles Online"
 					date="Dec 2021"
@@ -81,13 +65,6 @@ const projects = await getPinnedRepositories();
 					date="May 2021"
 				>
 					<AcademicCap />
-				</ListItem>
-				<ListItem
-					title="Got engaged"
-					subtitle="Asked my girlfriend to marry me at the ISU Campanile"
-					date="Apr 2021"
-				>
-					<Cake />
 				</ListItem>
 				<ListItem
 					title="Started an internship at Rain and Hail"

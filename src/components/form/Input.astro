@@ -1,30 +1,30 @@
 ---
-import ExclamationCircle from "@components/icons/ExclamationCircle.astro"
-import { clsx } from "@utils/cn"
+import ExclamationCircle from "@components/icons/ExclamationCircle.astro";
+import { clsx } from "@utils/cn";
 
 // prettier-ignore
 export type ExcludedProps = "name" | "class" | "aria-describedby" | "aria-invalid"
 
 export type Props = Omit<astroHTML.JSX.InputHTMLAttributes, ExcludedProps> & {
-	name: string
-	label: string
-	helpText?: string
-	required?: boolean
-	errorText?: string
-}
+	name: string;
+	label: string;
+	helpText?: string;
+	required?: boolean;
+	errorText?: string;
+};
 
 const { name, label, helpText, required, errorText, type, ...rest } =
-	Astro.props
+	Astro.props;
 
-const inputDivClassName = clsx("mt-1", errorText && "relative")
+const inputDivClassName = clsx("mt-1", errorText && "relative");
 const inputClassName = clsx(
 	"block w-full border border-slate-500 sm:text-sm focus:ring-2 focus:ring-sky-500 outline-none p-2 dark:text-slate-300 bg-inherit",
 	errorText && "border-red-500",
-)
+);
 const helpTextClassName = clsx(
 	"mt-2 text-sm",
 	errorText ? "text-red-500" : "text-gray-500",
-)
+);
 ---
 
 <div class="dark:text-slate-300 text-slate-800">

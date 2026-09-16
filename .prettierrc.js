@@ -39,5 +39,4 @@ export default {
 	trailingComma: "all",
 	useTabs: true,
 	vueIndentScriptAndStyle: false,
-}
-
+};
