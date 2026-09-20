@@ -14,6 +14,17 @@ const projects = await getPinnedRepositories();
 <Layout title="Luke Shay">
 	<main>
 		<Information />
+		<Section title="Stats">
+			<SectionHeader>Github Commits</SectionHeader>
+			<img
+				class="w-full"
+				src="http://ghchart.rshah.org/lukeshay"
+				alt="Luke Shay's Github chart"
+			/>
+			<p class="text-xs text-gray-500 text-right mt-2">
+				Does not include all private contributions
+			</p>
+		</Section>
 		<Section title="Projects">
 			<SectionHeader>My Projects</SectionHeader>
 			<List>
